@@ -59,17 +59,19 @@ body {
 }
 
 .container {
-  width: 600px;
-  height: 400px;
-  /*
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: repeat(5, 20%);
-  */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  height: 400px;
+
+  @media screen and (max-width: 619px) {
+    width: 350px;
+  }
+
+  @media screen and (min-width: 620px) {
+    width: 600px;
+  }
 }
 
 .title {
@@ -81,12 +83,20 @@ body {
 
 form {
   text-align: center;
+  @media screen and (max-width: 399px) {
+    margin: 20px 30px 20px 30px;
+  }
+
+  @media screen and (min-width: 400px) {
+    margin: 20px auto;
+  }
 }
 
 input[type="text"],
 input[type="email"] {
   height: 64px;
   width: 100%;
+  padding: 20px;
   margin: 20px auto;
   border: 1px solid grey;
 

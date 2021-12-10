@@ -6,6 +6,7 @@
   box-sizing: border-box;
   background: transparent;
   font-family: inherit;
+  // text-decoration: none;
 }
 
 ol,
@@ -39,10 +40,13 @@ button,
 input,
 textarea,
 select {
+  // appearance: none !important;
+  // -webkit-appearance: none !important; /* safari, opera, chrome miatt */
   border-radius: 0;
 }
 
 /* CSS reset */
+
 * {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -85,6 +89,7 @@ input[type="email"] {
   width: 100%;
   margin: 20px auto;
   border: 1px solid grey;
+
   background-color: white;
 }
 
@@ -105,8 +110,8 @@ button {
   height: 60px;
   margin: 50px auto;
   background-color: #39b69f;
+
   font-size: 12px;
   letter-spacing: 0.2em;
   color: white;
 }
-/*# sourceMappingURL=style.css.map */

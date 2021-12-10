@@ -3,9 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js"></script>
-    <title>Document</title>
+    <title>UI Build</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1 class="title">JELENTKEZÉS</h1>
+      <!-- név cím adatkezelési tájékoztatót -->
+      <form>
+        <label for="name"></label>
+        <input type="text" id="name" placeholder="Név" />
+        <label for="email"></label>
+        <input type="email" id="email" placeholder="Email" />
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox">Elolvastam és elfogadom az <span>Adatkezelési Tájékoztatót</span></label>
+        <button>ELKÜLD</button>
+      </form>
+    </div>
+  </body>
 </html>

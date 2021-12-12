@@ -64,14 +64,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   height: 400px;
-
-  @media screen and (max-width: 619px) {
-    width: 350px;
-  }
-
-  @media screen and (min-width: 620px) {
-    width: 600px;
-  }
 }
 
 .title {
@@ -80,22 +72,10 @@ body {
   letter-spacing: 0.2em;
   text-align: center;
   margin: 30px auto;
-
-  @media screen and (max-width: 619px) {
-    text-align: right;
-  }
 }
 
 form {
   text-align: center;
-  @media screen and (max-width: 619px) {
-    margin: 20px 30px 20px 30px;
-    text-align: left;
-  }
-
-  @media screen and (min-width: 620px) {
-    margin: 20px auto;
-  }
 }
 
 input[type="text"],
@@ -118,20 +98,10 @@ input[type="checkbox"] {
   border-radius: 0;
 
   vertical-align: bottom;
-
-  @media screen and (max-width: 619px) {
-    position: relative;
-    top: 10px;
-  }
 }
 
 label[for="checkbox"] {
   font-weight: 300;
-
-  @media screen and (max-width: 619px) {
-    position: absolute;
-    margin-left: 10px;
-  }
 }
 
 span {
@@ -148,10 +118,45 @@ button {
   font-size: 12px;
   letter-spacing: 0.2em;
   color: white;
+}
 
-  @media screen and (max-width: 619px) {
+@media screen and (max-width: 619px) {
+  .container {
+    width: 350px;
+  }
+
+  .title {
+    text-align: right;
+  }
+
+  form {
+    margin: 20px 30px 20px 30px;
+    text-align: left;
+  }
+
+  input[type="checkbox"] {
+    position: relative;
+    top: 10px;
+  }
+
+  label[for="checkbox"] {
+    position: absolute;
+    margin-left: 10px;
+  }
+
+  button {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .container {
+    width: 600px;
+  }
+
+  form {
+    margin: 20px auto;
   }
 }

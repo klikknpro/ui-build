@@ -76,22 +76,30 @@ body {
 
 .title {
   font-size: 24px;
+  font-weight: 900;
   letter-spacing: 0.2em;
   text-align: center;
   margin: 30px auto;
+}
+
+@media screen and (max-width: 619px) {
+  .title {
+    text-align: right;
+  }
 }
 
 form {
   text-align: center;
 }
 
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 619px) {
   form {
     margin: 20px 30px 20px 30px;
+    text-align: left;
   }
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 620px) {
   form {
     margin: 20px auto;
   }
@@ -104,6 +112,7 @@ input[type="email"] {
   padding: 20px;
   margin: 20px auto;
   border: 1px solid grey;
+  font-weight: 400;
   background-color: white;
 }
 
@@ -112,11 +121,30 @@ input[type="checkbox"] {
   width: 20px;
   height: 20px;
   border-radius: 0;
+  vertical-align: bottom;
+}
+
+@media screen and (max-width: 619px) {
+  input[type="checkbox"] {
+    position: relative;
+    top: 10px;
+  }
+}
+
+label[for="checkbox"] {
+  font-weight: 300;
+}
+
+@media screen and (max-width: 619px) {
+  label[for="checkbox"] {
+    position: absolute;
+    margin-left: 10px;
+  }
 }
 
 span {
   text-decoration: underline;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 button {
@@ -127,5 +155,13 @@ button {
   font-size: 12px;
   letter-spacing: 0.2em;
   color: white;
+}
+
+@media screen and (max-width: 619px) {
+  button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 /*# sourceMappingURL=style.css.map */
